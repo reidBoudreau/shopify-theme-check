@@ -1,0 +1,10 @@
+name: 'Shopify Theme Check'
+description: 'Lint Shopify themes'
+inputs:
+  directory:
+    description: 'Directory passed to `theme-check`'
+    required: false
+    default: '.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
